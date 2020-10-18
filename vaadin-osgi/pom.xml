@@ -175,10 +175,10 @@
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.core</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.compendium</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi.cmpn</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.apache.karaf.shell</groupId>
 			<artifactId>org.apache.karaf.shell.console</artifactId>
@@ -194,23 +194,39 @@
 
 		<dependency>
 			<groupId>de.mhus.lib</groupId>
-			<artifactId>mhu-lib-core</artifactId>
+			<artifactId>lib-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>de.mhus.lib</groupId>
-			<artifactId>mhu-lib-annotations</artifactId>
+			<artifactId>lib-annotations</artifactId>
 		</dependency>
-		
-		<dependency>
-	        <groupId>com.vaadin</groupId>
-	        <artifactId>vaadin-core</artifactId>
-	        <version>${vaadin.version}</version>
-	    </dependency>
+
         <dependency>
-	        <groupId>com.vaadin</groupId>
-	        <artifactId>flow-osgi</artifactId>
-	        <version>${flow.version}</version>
-	    </dependency>
-	    
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+			    
+      <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-button-flow</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-notification-flow</artifactId>
+      </dependency>
+        
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>flow-server</artifactId>
+    </dependency>
+      <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-lumo-theme</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>com.vaadin</groupId>
+        <artifactId>vaadin-ordered-layout-flow</artifactId>
+      </dependency>
+			    
 	</dependencies>
 </project>
